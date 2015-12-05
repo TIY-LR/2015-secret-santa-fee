@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('santas', {path: '/'}, function() {
     this.route('new');
     this.route('edit');
+    this.route('list');
   });
 
   this.route('survey', {path: '/:user_id'});
