@@ -1,0 +1,14 @@
+<p class="new-survey__description">
+Let me guess: You're getting older and don't know exactly what you want for Christmas?
+<br>Nailed it.
+<br>All you know is that socks aren't going to cut it!
+<br>Do your family and friends a favor and take the guess work out of it.
+</p>
+{{#link-to 'santas.new'}}New Survey{{/link-to}}
+
+<h3>Already Filled One Out?</h3>
+{{#each model as |user|}}
+<div class="user-login">
+  <h4 class="user-name">{{ user.firstName }} {{ user.lastName }}</h4>
+</div>
+{{/each}}

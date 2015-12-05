@@ -1,8 +1,6 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  relationship: DS.attr('string'),
-  name: DS.attr('string'),
   questionOne: DS.attr('string'),
   questionTwo: DS.attr('string'),
   questionThree: DS.attr('string'),

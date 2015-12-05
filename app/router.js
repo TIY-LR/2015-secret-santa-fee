@@ -10,6 +10,7 @@ Router.map(function() {
     this.route('new');
     this.route('edit');
   });
+
   this.route('survey', {path: '/:user_id'});
 });
 
