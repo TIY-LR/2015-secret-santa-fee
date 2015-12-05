@@ -6,7 +6,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-
+  this.route('santas', {path: '/'}, function() {
+    this.route('new');
+    this.route('edit');
+  });
+  this.route('survey', {path: '/:user_id'});
 });
 
 export default Router;
