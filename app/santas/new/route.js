@@ -12,6 +12,7 @@ export default Ember.Route.extend({
       newUser.setProperties(data);
 
       newUser.save().then(() => {
+        debugger;
         this.transitionTo('santas.edit');
       });
     },

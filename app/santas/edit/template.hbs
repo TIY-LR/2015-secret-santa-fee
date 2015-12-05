@@ -3,8 +3,8 @@
 <p class="new-survey__description">
   Answer these quesitons to the best of your ability. If not, you'll probably get some socks. That's cool if you like watching OTHER people open cool presents. At the end, hit submit and that's it! If you think you may have goofed on a question, you can always go back and edit the answers later.
 </p>
-<h2 class="new-survey__title">New Santa Survey</h2>
+<h2 class="new-survey__title">New Santa Survey for{{user.firstName}}</h2>
 
-{{survey-form}}
+{{survey-form onsubmit='createNewSurvey'}}
 
 <p>That's It! Good Luck!</p>

@@ -1,8 +1,10 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model() {
-    return this.store.createRecord('survey');
+  model(params) {
+    return this.store.createRecord('survey', {
+      user: params.id,
+    });
   },
 
   actions: {
@@ -12,7 +14,7 @@ export default Ember.Route.extend({
       newSurvey.setProperties(surveyData);
 
       newSurvey.save().then(() => {
-        this.transitionTo('santas.index');
+        this.transitionTo('santas.list');
       });
     },
   },

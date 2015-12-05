@@ -11,4 +11,6 @@ export default DS.Model.extend({
   questionEight: DS.attr('string'),
   questionNine: DS.attr('string'),
   questionTen: DS.attr('string'),
+
+  user: DS.belongsTo('user', {async: true}),
 });
