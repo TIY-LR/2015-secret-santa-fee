@@ -7,4 +7,11 @@
 <hr>
 <h4 class="new-survey__title">New Santa Survey for{{user.firstName}}</h4>
 
-{{survey-form onsubmit='createNewSurvey'}}
+{{log model.survey}}
+{{log model.survey.questions}}
+
+{{#if model.survey}}
+  {{#if model.survey.questions}}
+    {{survey-form survey=model.survey.questions onsubmit='saveSurvey'}}
+  {{/if}}
+{{/if}}

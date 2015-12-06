@@ -78,7 +78,7 @@ margin: auto;
 justify-content: center;
 }
 
-.new-survey__questions {
+.new-survey__item {
   display: flex;
   margin: auto;
   width: 500px;
@@ -91,7 +91,7 @@ justify-content: center;
   background-color: #efe;
 }
 
-.new-survey__questions-grey {
+.new-survey__item:nth-child(odd) {
   background-color: #fee;
 }
 

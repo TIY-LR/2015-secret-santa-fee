@@ -1,46 +1,11 @@
-
-
 <ul class="new-survey__questions new-survey__questions-grey">
-  <li class="survey-list">Are you a Boy/Girl/Undecided?</li>
-  <li class="survey-list_answer">{{mdl-textfield value=questionOne label="Answer"}}</li>
+  {{#each survey.questions as |question|}}
+    <li class="new-survey__item">
+      <h4 class="survey-question">Are you a Boy/Girl/Undecided?</h4>
+      <div class="survey-list_answer">{{mdl-textfield value=questionOne label="Answer"}}</div>
+    </li>
+  {{/each}}
 </ul>
-<ul class="new-survey__questions">
-  <li class="survey-list">Where's your favorite place / brand to buy clothes?</li>
-  <li class="survey-list_answer">{{mdl-textfield value=questionTwo label="Answer"}}</li>
-</ul>
-<ul class="new-survey__questions new-survey__questions-grey">
-  <li class="survey-list">Do you collect anything? If so, what is it?</li>
-  <li class="survey-list_answer">{{mdl-textfield value=questionThree label="Answer"}}</li>
-</ul>
-<ul class="new-survey__questions">
-  <li class="survey-list">Do you have any food allergies? If so, what are they?</li>
-  <li class="survey-list_answer">{{mdl-textfield value=questionFour label="Answer"}}</li>
-</ul>
-<ul class="new-survey__questions new-survey__questions-grey">
-  <li class="survey-list">What is something you can't live without?</li>
-  <li class="survey-list_answer">{{mdl-textfield value=questionFive label="Answer"}}</li>
-</ul>
-<ul class="new-survey__questions">
-  <li class="survey-list">What's one thing you always seem to be running out of?</li>
-  <li class="survey-list_answer">{{mdl-textfield value=questionSix label="Answer"}}</li>
-</ul>
-<ul class="new-survey__questions new-survey__questions-grey">
-  <li class="survey-list">You love the smell of _____ but can't stand the smell of _____:</li>
-  <li class="survey-list_answer">{{mdl-textfield value=questionSeven label="Answer"}}</li>
-</ul>
-<ul class="new-survey__questions">
-  <li class="survey-list">Do you have a favorite hobby? What is it?</li>
-  <li class="survey-list_answer">{{mdl-textfield value=questionEight label="Answer"}}</li>
-</ul>
-<ul class="new-survey__questions new-survey__questions-grey">
-  <li class="survey-list">If you have a favorite sports team, who are they?</li>
-  <li class="survey-list_answer">{{mdl-textfield value=questionNine label="Answer"}}</li>
-</ul>
-<ul class="new-survey__questions">
-  <li class="survey-list"> Bonus: What was the worst Christmas gift you can think of?</li>
-  <li class="survey-list_answer">{{mdl-textfield value=questionTen label="Answer"}}</li>
-</ul>
-
 
 
 {{mdl-button isRaised=true text='Submit'}}
