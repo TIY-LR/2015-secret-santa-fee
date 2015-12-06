@@ -1,10 +1,13 @@
 
 
-
 <h3 class="list-title"> Completed Surveys </h3>
 
 {{#each model as |user|}}
 <div class="user-login">
-  <p class="user-name">{{ user.firstName }} {{ user.lastName }}</p>
+  <p class="user-name">
+    {{#link-to 'santas.edit' user}}
+      {{ user.firstName }} {{ user.lastName }}
+    {{/link-to}}
+  </p>
 </div>
 {{/each}}

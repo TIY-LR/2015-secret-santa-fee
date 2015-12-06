@@ -5,13 +5,10 @@
   Answer these quesitons to the best of your ability. If not, you'll probably get some socks. That's cool if you like watching OTHER people open cool presents. At the end, hit submit and that's it! If you think you may have goofed on a question, you can always go back and edit the answers later.
 </p>
 <hr>
-<h4 class="new-survey__title">New Santa Survey for{{user.firstName}}</h4>
+<h4 class="new-survey__title">New Santa Survey for {{model.firstName}}</h4>
 
-{{log model.survey}}
-{{log model.survey.questions}}
+{{log model.firstSurvey.questions}}
 
-{{#if model.survey}}
-  {{#if model.survey.questions}}
-    {{survey-form survey=model.survey.questions onsubmit='saveSurvey'}}
-  {{/if}}
+{{#if model.firstSurvey}}
+  {{survey-form survey=model.firstSurvey onSurveySaved='surveyHasSaved'}}
 {{/if}}

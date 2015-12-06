@@ -1,11 +1,12 @@
+{{log survey.questions.length}}
+
 <ul class="new-survey__questions new-survey__questions-grey">
   {{#each survey.questions as |question|}}
     <li class="new-survey__item">
-      <h4 class="survey-question">Are you a Boy/Girl/Undecided?</h4>
-      <div class="survey-list_answer">{{mdl-textfield value=questionOne label="Answer"}}</div>
+      <h4 class="survey-question">{{question.text}}</h4>
+      <div class="survey-list_answer">{{mdl-textfield value=question.answer label="Answer"}}</div>
     </li>
   {{/each}}
 </ul>
-
 
 {{mdl-button isRaised=true text='Submit'}}

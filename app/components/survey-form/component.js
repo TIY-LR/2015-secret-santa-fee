@@ -7,8 +7,12 @@ export default Ember.Component.extend({
     ev.preventDefault();
 
     // Save all of the questions and wait...
+    var questions = this.get('survey.questions');
 
-    this.sendAction('onsubmit', surveyData);
-    console.log(surveyData);
+    new Ember.RSVP.all(questions.map((question) => {
+      return question.save();
+    })).then(() => {
+      this.sendAction('onSurveySaved');
+    });
   },
 });
