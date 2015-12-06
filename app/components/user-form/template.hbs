@@ -1,6 +1,8 @@
 {{yield}}
 
-<h2 class="step-one__title">Step 1: Who Are You?</h2>
-{{input type="text" name="firstName" id="first-name" placeholder="First Name" value=firstName}}
-{{input type="text" name="lastName" id="last-name" placeholder="Last Name" value=lastName}}
-<button>Step Two</button>
+<h5 class="step-one__title">Step 1:</h5>
+<h3 class="step-one__title step-one__title-sub"> What's Your Name?</h3>
+
+{{mdl-textfield label="First Name" id="first-name" value=firstName}}
+{{mdl-textfield label="Last Name"  id="last-name"  value=lastName}}
+{{mdl-button isRaised=true text='Continue'}}

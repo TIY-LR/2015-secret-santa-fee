@@ -1,12 +1,25 @@
-<h1 id="title"> Secret Santa Survey </h1>
 
-<p class="new-survey__description">
-Let me guess: You're getting older and don't know exactly what you want for Christmas?
-<br>Nailed it.
-<br>All you know is that socks aren't going to cut it!
-<br>Do your family and friends a favor and take the guess work out of it.
-</p>
-<ul>
-  <li>{{#link-to 'santas.new'}}Get Started{{/link-to}}</li>
-  <li>{{#link-to 'santas.list'}}Completed Surveys{{/link-to}}</li>
-</ul>
+
+<div class="title-text">
+  <h1 id="title"> Secret Santa Survey </h1>
+</div>
+
+<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title">
+  </div>
+  <div class="mdl-card__supporting-text">
+    Let me guess: You're getting older and don't know exactly what you want for Christmas?
+    Nailed it.
+    All you know is that socks aren't going to cut it!
+    Do your family and friends a favor and take the guess work out of it.
+
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    {{#link-to 'santas.new'}}<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Get Started
+    </a>{{/link-to}}
+    {{#link-to 'santas.list'}}<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Completed Surveys
+    </a>{{/link-to}}
+  </div>
+</div>

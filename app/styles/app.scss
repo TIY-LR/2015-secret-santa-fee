@@ -1,1 +1,105 @@
 @import 'material-design-lite';
+
+
+
+//INDEX STYLES
+
+.mdl-grid {
+  flex-direction: column;
+}
+
+.title-text {
+  display: flex;
+  margin: auto;
+}
+
+.demo-card-wide {
+  display: flex;
+  margin: auto;
+}
+
+.demo-card-wide.mdl-card {
+  width: 512px;
+  display: flex;
+  margin: auto;
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('../ssphoto.png') center / cover;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+.mdl-card__actions {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+//NEW Styles
+
+
+  .step-one__title, .mdl-textfield, .mdl-button, .step-two_title {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+  }
+
+.step-one__title, .step-two_title {
+  padding: 10px;
+}
+
+.step-one__title-sub {
+  padding-top: 20px;
+}
+
+//EDIT Styles
+
+.new-survey_sub-title {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.new-survey__description {
+display: flex;
+width: 500px;
+margin: auto;
+margin-top: 20px;
+padding: 50px;
+border: #111 solid 1px;
+}
+
+.new-survey__title {
+display: flex;
+margin: auto;
+justify-content: center;
+}
+
+.new-survey__questions {
+  display: flex;
+  margin: auto;
+  width: 500px;
+  list-style: none;
+  flex-direction: column;
+  padding: 10px;
+  margin-top: 30px;
+  border: #111 solid 1px;
+  margin-bottom: 10px;
+  background-color: #efe;
+}
+
+.new-survey__questions-grey {
+  background-color: #fee;
+}
+
+.survey-list {
+  display: flex;
+  justify-content: center;
+}
+
+.survey-list_answer {
+  display: flex;
+}

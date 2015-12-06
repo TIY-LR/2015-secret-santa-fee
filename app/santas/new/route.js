@@ -13,7 +13,7 @@ export default Ember.Route.extend({
 
       newUser.save().then(() => {
         debugger;
-        this.transitionTo('santas.edit');
+        this.transitionTo('santas.edit', newUser.id);
       });
     },
   },

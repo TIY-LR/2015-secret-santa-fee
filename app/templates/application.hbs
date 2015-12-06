@@ -1,10 +1,9 @@
-<nav>
-  <ul>
-    <li>
-      {{#link-to 'santas.new'}}Get Started{{/link-to}}
-      {{#link-to 'santas.index'}}Home{{/link-to}}
-    </li>
-  </ul>
-</nav>
+{{#mdl-nav title='Secret Santa' fixedHeader=true}}
+  {{mdl-nav-item name='Get Started'   route='santas.new'}}
+  {{mdl-nav-item name='Completed Surveys'      route='santas.list'}}
+  {{mdl-nav-item name='Home'      route='santas.index'}}
+  <div class="mdl-grid">
+    {{outlet}}
 
-{{outlet}}
+  </div>
+  {{/mdl-nav}}
