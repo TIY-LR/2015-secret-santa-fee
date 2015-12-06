@@ -103,3 +103,27 @@ justify-content: center;
 .survey-list_answer {
   display: flex;
 }
+
+// LIST Styles
+
+.list-title {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  margin: 25px;
+}
+
+.user-login {
+background-color: #fee;
+display: flex;
+align-content: center;
+border: #111 solid 1px;
+width: 300px;
+justify-content: center;
+margin: auto;
+padding: 15px;
+}
+
+.user-name {
+  margin: 0;
+}

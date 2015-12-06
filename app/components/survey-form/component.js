@@ -4,7 +4,6 @@ export default Ember.Component.extend({
   tagName: 'form',
 
   submit(ev) {
-    debugger;
     ev.preventDefault();
 
     var surveyData = this.getProperties(

@@ -1,7 +1,10 @@
-<h3> Completed Surveys </h3>
+
+
+
+<h3 class="list-title"> Completed Surveys </h3>
 
 {{#each model as |user|}}
 <div class="user-login">
-  <h4 class="user-name">{{ user.firstName }} {{ user.lastName }}</h4>
+  <p class="user-name">{{ user.firstName }} {{ user.lastName }}</p>
 </div>
 {{/each}}

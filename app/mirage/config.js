@@ -7,6 +7,7 @@ export default function() {
   this.post('/users');
   this.put('/users/:id');
 
+
   // These comments are here to help you get started. Feel free to delete them.
 
   /*
