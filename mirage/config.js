@@ -1,12 +1,12 @@
 export default function() {
 
+  this.urlPrefix = 'http://tiysecretsanta.azurewebsites.net';
   this.namespace = 'api';
 
   this.get('/users');
   this.get('/users/:id');
   this.post('/users');
   this.put('/users/:id');
-
 
   // These comments are here to help you get started. Feel free to delete them.
 
